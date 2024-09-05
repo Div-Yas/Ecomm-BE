@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "64fb45c3c7a8c9a003b00004",
+    "userId": "64fb45b3c7a8c9a003b00001",
+    "items": [
+      {
+        "productId": "64fb46e3c7a8c9a003b00005",
+        "quantity": 2
+      },
+      {
+        "productId": "64fb46e3c7a8c9a003b00006",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "_id": "64fb45c3c7a8c9a003b00005",
+    "userId": "64fb45b3c7a8c9a003b00002",
+    "items": [
+      {
+        "productId": "64fb46e3c7a8c9a003b00007",
+        "quantity": 3
+      }
+    ]
+  }
+]
