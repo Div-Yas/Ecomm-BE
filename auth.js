@@ -34,7 +34,6 @@ const authenticateJWT = (req, res, next) => {
 
   if (!authHeader) return res.status(403).send("Access denied");
 
-  // If the token has the 'Bearer' prefix, remove it
   const token = authHeader.startsWith("Bearer ")
     ? authHeader.slice(7, authHeader.length).trim()
     : authHeader;

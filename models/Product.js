@@ -9,8 +9,8 @@ const productSchema = new mongoose.Schema({
   discountPrice: { type: Number },
   sellingPrice: { type: Number, required: true },
   quantity: { type: Number, required: true },
-  uom: { type: String }, // Unit of Measure
-  hsnCode: { type: String }, // Harmonized System Nomenclature Code
+  uom: { type: String },
+  hsnCode: { type: String },
 });
 
 module.exports = mongoose.model("Product", productSchema);

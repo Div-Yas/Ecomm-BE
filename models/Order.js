@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Item Schema
 const itemSchema = new mongoose.Schema({
   productId: {
     type: mongoose.Schema.Types.ObjectId,
@@ -13,7 +12,7 @@ const itemSchema = new mongoose.Schema({
 
 const orderSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-  items: [itemSchema], // Array of items
+  items: [itemSchema],
   address: { type: String, required: true },
   phoneNumber: { type: String, required: true },
   status: { type: String, default: "Placed" },

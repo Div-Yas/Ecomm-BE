@@ -33,7 +33,7 @@ router.post("/add", upload.single("image"), async (req, res) => {
   const product = new Product({
     name: req.body.name,
     description: req.body.description,
-    image: filePath.split("/").pop(), // Save image URL
+    image: filePath.split("/").pop(),
     originalPrice: req.body.originalPrice,
     discountPrice: req.body.discountPrice,
     sellingPrice: req.body.sellingPrice,

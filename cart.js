@@ -8,24 +8,19 @@ router.post("/add", async (req, res) => {
   const { productId, quantity, userId } = req.body;
 
   try {
-    // Find the user's cart
     let cart = await Cart.findOne({ userId });
 
     if (cart) {
-      // Check if the product already exists in the cart
       const itemIndex = cart.items.findIndex(
         (item) => item.productId.toString() === productId
       );
 
       if (itemIndex > -1) {
-        // If it exists, update the quantity
         cart.items[itemIndex].quantity += quantity;
       } else {
-        // If it doesn't exist, add the item to the cart
         cart.items.push({ productId, quantity });
       }
     } else {
-      // If no cart exists, create a new one
       cart = new Cart({
         userId,
         items: [{ productId, quantity }],
@@ -44,7 +39,6 @@ router.get("/:userId", async (req, res) => {
   const { userId } = req.params;
 
   try {
-    // Convert userId to ObjectId if necessary
     const objectId = mongoose.Types.ObjectId.isValid(userId)
       ? new mongoose.Types.ObjectId(userId)
       : userId;

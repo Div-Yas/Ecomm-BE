@@ -18,7 +18,6 @@ router.post("/place", async (req, res) => {
         .send("Address, phone number, and items are required");
     }
 
-    // Fetch the user's cart
     const cart = await Cart.findOne({ userId: req.user.id });
     console.log(items, "items");
 
@@ -26,7 +25,6 @@ router.post("/place", async (req, res) => {
       return res.status(400).send("Cart is empty");
     }
 
-    // Create a new order
     const order = new Order({
       userId: req.user.id,
       address,
@@ -40,7 +38,6 @@ router.post("/place", async (req, res) => {
 
     await order.save();
 
-    // Clear the user's cart after placing the order
     cart.items = [];
     await cart.save();
 
@@ -116,6 +113,7 @@ router.get("/summary", async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+
 // Update order status
 router.put("/update/:id", async (req, res) => {
   try {
@@ -134,7 +132,6 @@ router.put("/update/:id", async (req, res) => {
       return res.status(404).send("Order not found");
     }
 
-    // Update order status
     order.status = status;
     await order.save();
 
