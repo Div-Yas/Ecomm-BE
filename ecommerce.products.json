@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "66d8714e2b38c98d82ca39dc"
+  },
+  "name": "Bracelet",
+  "description": "Description for Product 1",
+  "image": "bracelet.webp",
+  "originalPrice": 100,
+  "discountPrice": 80,
+  "sellingPrice": 90,
+  "quantity": 50,
+  "uom": "Piece",
+  "hsnCode": "123456",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d8714e2b38c98d82ca39dd"
+  },
+  "name": "Tunic Top",
+  "description": "Description for Tunic Top collection",
+  "image": "Tunic.jpg",
+  "originalPrice": 150,
+  "discountPrice": 120,
+  "sellingPrice": 130,
+  "quantity": 30,
+  "uom": "Piece",
+  "hsnCode": "654321",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d8714e2b38c98d82ca39de"
+  },
+  "name": "Hair Dryer",
+  "description": "Pick Ur Needs (3500watt) High Quality Salon Grade ",
+  "image": "hair-dryer.jpg",
+  "originalPrice": 200,
+  "discountPrice": 180,
+  "sellingPrice": 190,
+  "quantity": 20,
+  "uom": "Piece",
+  "hsnCode": "987654",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d993763d6220bd8a01422b"
+  },
+  "name": "Shampoo",
+  "description": "Keratin Hair Care Duo (Shampoo + Conditioner) ",
+  "image": "1725535094576.jpg",
+  "originalPrice": 1499,
+  "sellingPrice": 879,
+  "quantity": 3,
+  "uom": "345",
+  "hsnCode": "1234",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d9a27ed89c6a0a3c7212b1"
+  },
+  "name": "Men's Watch",
+  "description": "HORIZEN Stainless Steel Chronograph Luxury Watch For Men (Black Dial)",
+  "originalPrice": 2400,
+  "sellingPrice": 1499,
+  "quantity": 3,
+  "uom": "456",
+  "hsnCode": "2334",
+  "__v": 0,
+  "image": "1725538942803.jpg"
+}]

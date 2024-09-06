@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "66d97b8f3d6220bd8a0141e5"
+  },
+  "username": "Divya",
+  "password": "$2a$10$jpF9RjHCsHNhxPx.T4VonupLzt4xLjaakqqw3P31cdksh9hDgmQ6e",
+  "role": "Customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d97c323d6220bd8a0141e7"
+  },
+  "username": "Admin",
+  "password": "$2a$10$aErOFfaOcLcDd51L9eHL6OAq0nIIEGS0R/i5T7LiXPi6qJ3IlJkUe",
+  "role": "Admin",
+  "__v": 0
+}]
